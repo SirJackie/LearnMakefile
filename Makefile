@@ -11,5 +11,13 @@ hello.i:hello.c
 	gcc -E hello.c -o hello.i
 
 .PHONY:
-clear:
+clearall:
 	rm -rf hello.i hello.s hello.o hello
+
+clear:
+	rm -rf hello.i hello.s hello.o
+
+run:
+	make
+	chmod 777 hello
+	./hello
