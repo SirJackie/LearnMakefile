@@ -9,3 +9,7 @@ hello.s:hello.i
 
 hello.i:hello.c
 	gcc -E hello.c -o hello.i
+
+.PHONY:
+clear:
+	rm -rf hello.i hello.s hello.o hello
