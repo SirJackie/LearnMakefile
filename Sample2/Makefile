@@ -12,3 +12,6 @@ run:
 	make
 	chmod 777 test
 	./test
+
+clear:
+	rm -rf .vscode circle.o main.o test
